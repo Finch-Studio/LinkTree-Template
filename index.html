@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A personal and business portfolio showcasing the projects and services of Finchy, a Developer, Environment Artist, Entrepreneur, Nerd, and Gamer.">
+    <meta name="keywords" content="Finchy, Developer, Environment Artist, Entrepreneur, Nerd, Gamer, Portfolio, Business, Personal, Media Void, Finch Studio, Amazon Lumberyard, O3DE, Skynet Bot">
+    <meta name="author" content="Finchy">
+    
+    <!-- For SEO -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Protocol for social media sharing -->
+    <meta property="og:title" content="Finchy's Portfolio">
+    <meta property="og:description" content="Discover the projects and services Finchy has contributed to, from game development with Amazon Lumberyard and O3DE, to his entrepreneurial ventures with Finch Studio and Media Void.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://FinchStudio.ca">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Finchy's Portfolio">
+    <meta name="twitter:description" content="Discover the projects and services Finchy has contributed to, from game development with Amazon Lumberyard and O3DE, to his entrepreneurial ventures with Finch Studio and Media Void.">
+    <meta name="twitter:image" content="">
+	
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Importing Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>LinkTree Page</title>
+	
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="./assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+            <h1>Finchy</h1>
+            <p>Developer | Environment Artist | Entrepreneur | Nerd | Gamer</p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/afinchy/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/afinchy" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Toggle for Personal/Business -->
+        <div class="toggle-container">
+            <label class="toggle-label">Personal</label>
+            <label class="switch">
+                <input type="checkbox" id="viewSwitch">
+                <span class="slider-btn"></span>
+            </label>
+            <label class="toggle-label">Business</label>
+        </div>
+
+        <!-- Personal View Content -->
+        <div id="personalView">
+
+            <!-- Socials Category -->
+            <div class="category-section">
+                <h2>Socials</h2>
+                <p>Connect with me on these platforms.</p>
+                <a class="link-button" href="https://www.linkedin.com/in/afinchy/" target="_blank">LinkedIn</a>
+                <a class="link-button" href="https://www.facebook.com/aFinchy/" target="_blank">Facebook</a>
+                <a class="link-button" href="https://github.com/afinchy" target="_blank">GitHub</a>
+                <a class="link-button" href="https://www.youtube.com/@aFinchy_" target="_blank">YouTube</a>
+            </div>
+
+            <!-- Portfolio Category -->
+            <div class="category-section">
+                <h2>Portfolio</h2>
+                <p>Discover my portfolio and other related projects.</p>
+                <a class="link-button" href="https://amyfinch.ca" target="_blank">Portfolio</a>
+				<a class="link-button" href="https://afinchy.ca" target="_blank">Projects</a>
+                <a class="link-button" href="https://finch.tk" target="_blank">LinkTree</a>
+            </div>
+        </div>
+
+			<br>
+			<center>
+        <!-- Toggle for Current/Past Work within Personal View -->
+		<h3>Discover projects & services that I have contributed to.</h3>
+		<div class="toggle-container" id="workToggleContainer" style="display: none;">
+			<span class="toggle-label" id="currentLabel">Current</span>
+			<label class="switch">
+				<input type="checkbox" id="workSwitch">
+				<span class="slider-btn"></span>
+			</label>
+			<span class="toggle-label" id="pastLabel">Past</span>
+		
+		</div>
+		
+		<!-- Current Work -->
+		
+		<!-- Media Void -->
+		<div id="media-void-section">
+			<div class="category-section">
+                   <h2>Media Void Services</h2>
+                <p>The ultimate hub for media enthusiasts to connect, discuss, and explore the world of movies, TV shows, games, music, books, and more.</p>
+                <a class="link-button" href="https://MediaVoid.io" target="_blank">Website</a>
+                <a class="link-button" href="https://github.com/MediaVoid" target="_blank">GitHub</a>
+                <a class="link-button" href="https://www.youtube.com/@Media-Void" target="_blank">YouTube</a>
+                </div>
+		</div>
+
+		<!-- Finch Studio -->
+		<div id="finch-studio-section">
+ 			<div class="category-section">
+                <h2>Finch Studio</h2>
+                <p>Our digital design studio and related projects. The studio is the head that I manage multiple smaller projects under.</p>
+                <a class="link-button" href="https://github.com/finch-studio" target="_blank">GitHub</a>
+                <a class="link-button" href="https://FinchStudio.ca" target="_blank">Finch Studio</a>
+                </div>
+		</div>
+
+		<!-- Past Work -->
+		<div id="past-work-section" style="display: none;">
+    	<!-- Amazon Lumberyard -->
+		<div class="category-section">
+            <h2>Amazon Lumberyard</h2>
+			<p>Amazon Lumberyard is a free, AAA game engine that gives you the tools you need to create high quality games.</p>
+			<p>Contributed to the engine, website along with creation of the official support discord. Also responsible for sunsetting Lumberyard.</p>
+            <a class="link-button" href="https://github.com/aws/lumberyard" target="_blank">GitHub</a>
+            <a class="link-button" href="https://discord.gg/lumberyard" target="_blank">Discord</a>
+        </div>
+
+        <!-- Open 3D Engine -->
+		<div class="category-section">
+            <h2>O3DE</h2>
+			<p>Open 3D Engine (O3DE) is an Apache 2.0-licensed multi-platform 3D engine</p>
+			<p>Contributed to the launch, Building of and maintaining their Youtube, Discord and GitHub Channels</P>
+            <a class="link-button" href="https://github.com/o3de" target="_blank">GitHub</a>
+            <a class="link-button" href="https://discord.gg/o3de" target="_blank">Discord</a>
+			<a class="link-button" href="https://o3de.org" target="_blank">O3DE Website</a>
+			<a class="link-button" href="https://o3d.foundation/about/people/" target="_blank">O3D Foundation</a>
+            </div>
+		</div>
+
+<!-- Business View Content -->
+<div id="business-view-section">
+    
+    <!-- Finch Studio Category -->
+            <div class="category-section">
+                <h2>Finch Studio</h2>
+                <p>Our digital design studio and related projects.</p>
+                <a class="link-button" href="https://github.com/finch-studio" target="_blank">GitHub</a>
+                <a class="link-button" href="https://FearTheWild.gg" target="_blank">Fear The Wild</a>
+                <a class="link-button" href="https://FinchStudio.ca" target="_blank">Finch Studio</a>
+                <a class="link-button" href="https://FlashbackSalvage.com" target="_blank">Flashback Salvage</a>
+            </div>
+
+            <!-- Media Void Services Category -->
+            <div class="category-section">
+                <h2>Media Void Services</h2>
+                <p>The ultimate hub for media enthusiasts to connect, discuss, and explore the world of movies, TV shows, games, music, books, and more.</p>
+                <a class="link-button" href="https://MediaVoid.io" target="_blank">Website</a>
+                <a class="link-button" href="https://github.com/MediaVoid" target="_blank">GitHub</a>
+                <a class="link-button" href="https://www.youtube.com/@Media-Void" target="_blank">YouTube</a>
+            </div>
+
+            <!-- Skynet Bot Services Category -->
+            <div class="category-section">
+                <h2>Skynet Bot Services</h2>
+                <p>Skynet Bot is a powerful and feature-rich Discord bot created exclusively for the Media Void Community.</p>
+                <a class="link-button" href="https://SkynetBot.io" target="_blank">Website</a>
+                <a class="link-button" href="https://github.com/Discord-Skynet-Bot" target="_blank">GitHub</a>
+            </div>
+</div>
+<script>
+	document.addEventListener('DOMContentLoaded', (event) => {
+    console.log("DOM loaded");  // Log to confirm JS file is loaded
+
+    // Elements for Personal/Business toggle
+    const viewSwitch = document.getElementById('viewSwitch');
+    const personalView = document.getElementById('personalView');
+    const businessView = document.getElementById('business-view-section');
+
+    // Elements for Current/Past Work toggle within Personal View
+    const workSwitch = document.getElementById('workSwitch');
+    const workToggleContainer = document.getElementById('workToggleContainer');
+    const mediaVoidSection = document.getElementById('media-void-section');
+    const finchStudioSection = document.getElementById('finch-studio-section');
+    const pastWorkSection = document.getElementById('past-work-section');
+
+    // Setting default views
+    personalView.style.display = 'block';
+    businessView.style.display = 'none';
+    workToggleContainer.style.display = 'block';  // Display the toggle for Current/Past Work
+    mediaVoidSection.style.display = 'block';
+    finchStudioSection.style.display = 'block';
+    pastWorkSection.style.display = 'none';
+
+    // Listen to the change event on Personal/Business toggle
+    viewSwitch.addEventListener('change', function() {
+        console.log("View Switch toggled");
+        if (this.checked) {
+            personalView.style.display = 'none';
+            businessView.style.display = 'block';
+
+            // Hide the Current/Past Work sections and their toggle when Business view is active
+            workToggleContainer.style.display = 'none';  // Hide the toggle for Current/Past Work
+            mediaVoidSection.style.display = 'none';
+            finchStudioSection.style.display = 'none';
+            pastWorkSection.style.display = 'none';
+        } else {
+            personalView.style.display = 'block';
+            businessView.style.display = 'none';
+
+            // SHOW the toggle for Current/Past Work when switching back to Personal view
+            workToggleContainer.style.display = 'block';
+
+            // Reset the workSwitch to "Current" position
+            workSwitch.checked = false;
+
+            // Show the Current Work section by default when switching back to Personal view
+            mediaVoidSection.style.display = 'block';
+            finchStudioSection.style.display = 'block';
+            pastWorkSection.style.display = 'none';
+        }
+    });
+
+    // Listen to the change event on Current/Past Work toggle
+    workSwitch.addEventListener('change', function() {
+        console.log("Work Switch toggled");
+        if (this.checked) {
+            mediaVoidSection.style.display = 'none';
+            finchStudioSection.style.display = 'none';
+            pastWorkSection.style.display = 'block';
+        } else {
+            mediaVoidSection.style.display = 'block';
+            finchStudioSection.style.display = 'block';
+            pastWorkSection.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+
+</html>
+
+

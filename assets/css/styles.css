@@ -1,0 +1,252 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #23272A;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #7289DA;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.workToggleContainer.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #555;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider-btn:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.toggle-label {
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#businessView {
+    display: none;
+}
+
+#oldworkView {
+    display: none;
+}
+
+.category-section {
+    text-align: center; /* Centers the category title and description */
+    margin-bottom: 20px;
+}
+
+.link-button {
+    display: block;
+    background-color: #7289DA;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+}
+
+.link-button:hover {
+    background-color: #586e91;
+}
+
+.switch input:checked + .slider-btn:before {
+    transform: translateX(26px);
+}
+
+.switch input:checked + .slider-btn {
+    background-color: #7289da;  /* Discord blue */
+}
+
+.switch-label {
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styles for the navigation menu */
+#navMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px 20px;  /* Adjusted padding */
+    z-index: 1000;
+}
+
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* Styles for animating bars into arrow */
+.menu-toggle.arrow .bar1 {
+    transform: rotate(-45deg) translateY(7px);
+}
+
+.menu-toggle.arrow .bar2 {
+    opacity: 0;
+}
+
+.menu-toggle.arrow .bar3 {
+    transform: rotate(45deg) translateY(-7px);
+}
+
+#navLinks {
+    background-color: #2c2f33;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    right: 10px;  /* Padding on the right side */
+    width: 200px;
+    padding: 0 10px;  /* Added padding to the sides */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    opacity: 0;  /* Initially hidden */
+}
+
+#navLinks a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px; /* Slight rounding for link backgrounds */
+}
+
+#navLinks a:hover {
+    background-color: #23272a; /* Slightly lighter dark gray for hover */
+}
+
+/* Updated styles for showing/hiding navLinks */
+#navLinks.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+#navLinks:not(.hidden) {
+    max-height: 400px;  /* Adjust this value based on your content */
+    opacity: 1;
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    #navLinks {
+        width: 250px;  /* Wider menu on larger screens */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #navMenu {
+        padding: 10px 10px;  /* Reduced padding for mobile */
+    }
+
+    .menu-toggle .bar {
+        width: 20px;  /* Smaller bar width for mobile */
+        margin: 3px auto;  /* Adjusted margin for mobile */
+    }
+
+    #navLinks {
+        width: calc(100% - 20px);  /* Full width dropdown on mobile, accounting for padding */
+        border-radius: 0;  /* Remove border radius on mobile */
+    }
+
+    #navLinks a {
+        padding: 10px;  /* Increased padding for easier touch */
+    }
+}
